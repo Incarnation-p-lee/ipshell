@@ -1,6 +1,5 @@
 #include "include.h"
-#include "defvars.h"
-#include "external.h"
+#include "defs.h"
+#include "cd.h"
 
-#include "cd_cmd.h"
 #include "cd_cmd.c"

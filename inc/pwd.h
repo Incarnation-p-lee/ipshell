@@ -2,7 +2,6 @@
 #define COMMAND_PWD_H
 
 #define FILENAME_LEN_MAX 255
-#define PATH_LEN_MAX     65535
 
 void 
   pwd();

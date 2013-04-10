@@ -1,7 +1,6 @@
 #ifndef COMMAND_HANDLE_H
 #define COMMAND_HANDLE_H
 
-
 void
   eval(char *,char **);
 static int
@@ -9,14 +8,19 @@ static int
 static int
   builtin(char **);
 
-
-typedef void (*BLTin)(void);
-
+#define CMD_NULL 0xF1
 
 /* builtin command marco */
 #define QUIT     0
 #define EXIT     1
 #define PWD      2
+
+typedef void (*BLTin)(void);
+
+extern char *cargv[ARG_MAX];
+extern void pwd();
+extern void exitsh();
+extern void cd();
 
 
 char *builtin_cmd[] = {

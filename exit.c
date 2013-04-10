@@ -1,3 +1,4 @@
 #include "include.h"
-#include "exit_cmd.h"
+#include "exit.h"
+
 #include "exit_cmd.c"

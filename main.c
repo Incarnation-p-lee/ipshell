@@ -4,7 +4,8 @@
 * FOR:      A sample shell
 */
 #include "include.h"
-#include "defvars.h"
+#include "defs.h"
+#include "vars.h"
 #include "external.h"
 
 int

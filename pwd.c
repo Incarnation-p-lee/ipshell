@@ -1,4 +1,4 @@
 #include "include.h"
 
-#include "pwd_cmd.h"
+#include "pwd.h"
 #include "pwd_cmd.c"
