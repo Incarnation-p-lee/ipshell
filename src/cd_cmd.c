@@ -7,8 +7,11 @@
 void
   cd()
 {
-  if(NULL == cargv[0])
+  if(strcmp(builtin_cmd[CD], cargv[0]))
+  {
     fprintf(stdout,"call cd command in a unknown context.\n");
+	return;
+  }
   
   if(NULL == cargv[1])
   {
@@ -17,10 +20,14 @@ void
   }
   else
   {
-    chdir(cargv[1]);
-    fprintf(stdout,"Switched to ");
-    fflush(stdout);
-    pwd();
+    if(!chdir(cargv[1]))
+	{
+      fprintf(stdout,"Switched to ");
+      fflush(stdout);
+      pwd();
+    }
+	else
+	  fprintf(stdout,"unknown directory:%s\n",cargv[0]);
   }
  
   return;

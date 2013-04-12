@@ -8,12 +8,6 @@ static int
 static int
   builtin(char **);
 
-#define CMD_NULL 0xF1
-
-/* builtin command marco */
-#define QUIT     0
-#define EXIT     1
-#define PWD      2
 
 typedef void (*BLTin)(void);
 

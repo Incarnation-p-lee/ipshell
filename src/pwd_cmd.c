@@ -9,7 +9,7 @@ void
 {
   pid_t pid;
   int status;
-  
+
   if(pid = fork(), 0 == pid)
   {
     pwd_nested(getinode("."));
@@ -18,7 +18,7 @@ void
   }
   else
   {
-    if(waitpid(pid,&status,0) < 0)
+    if(waitpid(pid,&status,0) < 0)    
       fprintf(stdout,"waitpid error.\n");
   }
   return;
@@ -29,14 +29,18 @@ static void
 {
   
   char fname[FILENAME_LEN_MAX];
+  memset(fname,'\0',FILENAME_LEN_MAX);
+
   if(inode != getinode(".."))
   {
     getfilename(inode,fname);
     chdir("..");
     inode = getinode(".");
     pwd_nested(inode);
-    printf("/%s",fname);
+    fprintf(stdout,"%s/",fname);
   }
+  else
+    fprintf(stdout,"/");
   
   return;
 }
@@ -61,7 +65,7 @@ static void
   DIR *dp;
   struct dirent *entry;
 
-  if(dp = opendir(".."), NULL==dp)
+  if(dp = opendir(".."), NULL==dp)    
   {
     fprintf(stdout,".");
     return;
