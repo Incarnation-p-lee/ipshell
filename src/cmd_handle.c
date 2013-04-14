@@ -40,7 +40,7 @@ void
 }
 
 static int
-  parse_cmd(char *cmdline,char ** argv)
+  parse_cmd(char *cmdline,char **argv)
 {
   int i = 0;
   int argc = 0;

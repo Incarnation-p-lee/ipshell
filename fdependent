@@ -1,0 +1,6 @@
+main.o:  inc/include.h inc/defs.h inc/vars.h inc/external.h
+general.o:  inc/include.h inc/defs.h inc/cmd_handle.h \
+ 
+exit.o:  inc/include.h inc/exit.h 
+pwd.o:  inc/include.h inc/pwd.h 
+cd.o:  inc/include.h inc/defs.h inc/cd.h 
