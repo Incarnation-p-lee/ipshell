@@ -2,6 +2,6 @@
 #define EXTERNAL_D_H
 
 extern void
-  eval(char *,char **);
+eval(char *,char **);
 
 #endif

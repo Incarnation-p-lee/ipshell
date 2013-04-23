@@ -5,7 +5,7 @@
 */
 
 void
-  exitsh()
+exitsh()
 {
   exit(0);
 }

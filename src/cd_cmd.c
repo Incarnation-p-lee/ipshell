@@ -5,7 +5,7 @@
 */
 
 void
-  cd()
+cd()
 {
   if(strcmp(builtin_cmd[CD], cargv[0]))
   {

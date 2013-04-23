@@ -6,7 +6,7 @@ extern void pwd();
 extern char *builtin_cmd[];
 
 void
-  cd(void);
+cd(void);
 
 #endif
   

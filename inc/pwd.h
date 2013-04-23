@@ -4,13 +4,13 @@
 #define FILENAME_LEN_MAX 255
 
 void 
-  pwd();
+pwd();
 static unsigned long
-  getinode(char *);
+getinode(char *);
 static void
-  pwd_nested(unsigned long);
+pwd_nested(unsigned long);
 static void
-  getfilename(unsigned long,char *);
+getfilename(unsigned long,char *);
 
 #endif
   

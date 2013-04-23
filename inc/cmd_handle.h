@@ -2,11 +2,11 @@
 #define COMMAND_HANDLE_H
 
 void
-  eval(char *,char **);
+eval(char *,char **);
 static int
-  parse_cmd(char *,char **);
+parse_cmd(char *,char **);
 static int
-  builtin(char **);
+builtin(char **);
 
 typedef void (*BLTin)(void);
 

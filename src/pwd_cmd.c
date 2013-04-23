@@ -5,7 +5,7 @@
 */
 
 void
-  pwd()
+pwd()
 {
   pid_t pid;
   int status;
@@ -25,7 +25,7 @@ void
 }
 
 static void
-  pwd_nested(unsigned long inode)
+pwd_nested(unsigned long inode)
 {
   
   char fname[FILENAME_LEN_MAX];
@@ -44,9 +44,9 @@ static void
   
   return;
 }
-  
+
 static unsigned long
-  getinode(char *filename)
+getinode(char *filename)
 {
   struct stat info;
   
@@ -60,7 +60,7 @@ static unsigned long
 }
 
 static void
-  getfilename(unsigned long inode,char *filename)
+getfilename(unsigned long inode,char *filename)
 {
   DIR *dp;
   struct dirent *entry;

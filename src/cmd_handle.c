@@ -6,7 +6,7 @@
 */
 
 void
-  eval(char *cmdline,char **envp)
+eval(char *cmdline,char **envp)
 {
   char buf[CMD_MAX];
   int bg,status;
@@ -40,7 +40,7 @@ void
 }
 
 static int
-  parse_cmd(char *cmdline,char **argv)
+parse_cmd(char *cmdline,char **argv)
 {
   int i = 0;
   int argc = 0;
@@ -87,7 +87,7 @@ static int
 }
 
 static int
-  builtin(char **argv)
+builtin(char **argv)
 {
   int i = -1, len;
 

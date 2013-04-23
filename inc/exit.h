@@ -2,7 +2,7 @@
 #define COMMAND_EXIT_H
 
 void
-  exitsh(void);
+exitsh(void);
 
 #endif
 
